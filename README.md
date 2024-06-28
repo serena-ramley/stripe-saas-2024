@@ -18,6 +18,8 @@ Press `i` to edit, then `ESC` and `:wq:` to save when done.
 
 The first time you edit, a master key is created.
 
+`/config/master.key` should never be committed, and it is set to ignore in `.gitignore`
+
 ## Credentials
 
 `stripe_secret_key =` the secret key found at dashboard.stripe.com/test/dashboard
