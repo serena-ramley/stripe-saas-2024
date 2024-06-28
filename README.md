@@ -14,6 +14,8 @@ To edit the credentials, run the following in the command line:
 
 `EDITOR=vim rails credentials:edit`
 
+Press `i` to edit, then `ESC` and `:wq:` to save when done.
+
 The first time you edit, a master key is created.
 
 ## Credentials
