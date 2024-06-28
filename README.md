@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Cloud Development
 
-Things you may want to cover:
+This repository is developed using AWS Cloud 9 Ubuntu servers.
 
-* Ruby version
+The first 12 months (for select services) are free and you can set up cost alerts to manage usage.
 
-* System dependencies
+## Security
 
-* Configuration
+As of Rails 5.2, encrypted credentials are used instead of secrets.
 
-* Database creation
+To edit the credentials, run the following in the command line:
 
-* Database initialization
+`EDITOR=vim rails credentials:edit`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The first time you edit, a master key is created.
