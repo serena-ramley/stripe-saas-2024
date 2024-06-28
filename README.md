@@ -15,3 +15,7 @@ To edit the credentials, run the following in the command line:
 `EDITOR=vim rails credentials:edit`
 
 The first time you edit, a master key is created.
+
+## Credentials
+
+`stripe_secret_key =` the secret key found at dashboard.stripe.com/test/dashboard
