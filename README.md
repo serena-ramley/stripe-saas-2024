@@ -21,3 +21,11 @@ The first time you edit, a master key is created.
 ## Credentials
 
 `stripe_secret_key =` the secret key found at dashboard.stripe.com/test/dashboard
+
+To view credentials (when the master.key file matches the credentials.yml.enc file), run
+
+`rails c`
+
+`Rails.application.credentials`
+
+Or `Rails.application.credentials.stripe_secret_key`
