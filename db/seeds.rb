@@ -7,3 +7,6 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Post.create(title: "a free post", premium: false)
+Post.create(title: "another free post", premium: false)
+Post.create(title: "a premium post", premium: true)

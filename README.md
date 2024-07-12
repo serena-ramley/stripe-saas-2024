@@ -31,3 +31,32 @@ To view credentials (when the master.key file matches the credentials.yml.enc fi
 `Rails.application.credentials`
 
 Or `Rails.application.credentials.stripe_secret_key`
+
+## Callbacks
+
+`after_create` is a callback that runs once, when the record is first created. This is implemented in the user model to create a Stripe account using the user's email.
+
+## Database
+
+This application is using sqlite3
+
+The "posts" database table is created by initializing a Rails Migration:
+
+`rails g migration create_posts`
+
+Then edit the migration found in db/migrate (a timestamp is automatically generated in the file name)
+
+Finally, run the migration:
+
+`rails db:migrate`
+
+The schema.db will be automatically generated. Any changes made directly to the schema.db will be lost.
+
+After the first migration, you can check the status of migrations using:
+
+`rails db:migrate:status`
+
+## Fixtures
+
+Fixtures are used as test data in the specs as per
+https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
