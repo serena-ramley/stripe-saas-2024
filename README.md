@@ -1,5 +1,9 @@
 # README
 
+## To run application
+
+`bundle exec rails s`
+
 ## Cloud Development
 
 This repository is developed using AWS Cloud 9 Ubuntu servers.
@@ -60,3 +64,7 @@ After the first migration, you can check the status of migrations using:
 
 Fixtures are used as test data in the specs as per
 https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+## Authentication
+
+Authentication in this app is done with the Gem 'devise' following [this tutorial](https://dev.to/ahmadraza/authentication-using-devise-in-rails-7-3dn0#:~:text=Next%2C%20let%27s%20add%20the%20Devise%20gem%20to%20our,your%20terminal%20to%20install%20the%20gem%3A%20bundle%20install)

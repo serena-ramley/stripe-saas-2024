@@ -67,3 +67,5 @@ group :test do
 end
 
 gem "stripe", "~> 12.0"
+
+gem "devise", "~> 4.9"
